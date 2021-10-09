@@ -14,14 +14,15 @@ This repository provides you the material of installation the Catalana Hackintos
 | 256GB Apacer AS350 PANTHER  SSD | :white_check_mark: iMessage/Facetime | |
 | Qualcomm Atheros QCA9377 Wireless Network Adapter | :white_check_mark: HDMI | |
 | Core i3 7100U | :white_check_mark: Screen brightness adjustment | |
-| PC/2 Keyboard | :white_check_mark: Webcam | |
-| HDMI | :white_check_mark: Sleep/Wake functionality | |
+| PS/2 Keyboard | :white_check_mark: Webcam | |
+| I2C touchpad | :white_check_mark: Sleep/Wake functionality | |
+| HDMI | | |
 |[Manufacturers Website](https://www.asus.com/ru/Laptops/For-Home/VivoBook/ASUS-VivoBook-15-X542UQ/) | | |
 
 ## :muscle: Upgrades
 
 ### Wifi Card
-You need to purchase a Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF WiFi Card with Bluetooth 4.1 for correctly working wifi. 
+You need to purchase a Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF WiFi Card with Bluetooth 4.1 (for example or other wifi adapter for "naive" work) for correctly working wifi. 
 
 ### 256GB Apacer AS350 PANTHER  SSD
 Main boot drive for this machine.
