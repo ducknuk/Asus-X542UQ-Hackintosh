@@ -1,5 +1,5 @@
 # Asus-X542UQ-Catalina
-This repository provides you the material of installation the Catalana Hackintosh. Here you can find RELEASE and DEBUG versions.
+This repository provides you the material of installation the Catalana Hackintosh opencore. Here you can find RELEASE and DEBUG versions.Feel free to ask questions and make contributions
 
 <br>
 
@@ -9,7 +9,7 @@ This repository provides you the material of installation the Catalana Hackintos
 | Intel HD 630 | :white_check_mark: Intel HD 620 1536mb working | :x: nVidia GT 940mx |
 | GeForce® GT 940mx with 2GB GDDR5 | :white_check_mark: USB C/3.0 | :x: SD card reader (not tested yet) |
 | Realtek ALC294 | :white_check_mark: Ethernet port |  :x: Wifi |
-| 15.6" 16:9, 1920 x 1080 pixel 141 PPI, glossy: no | :white_check_mark: Audio | :x: WGA port |  
+| 15.6" 16:9, 1920 x 1080 pixel 141 PPI, glossy: no | :white_check_mark: Audio | :x: VGA port |  
 | 12gb 2133mhz DDR4 (extanded) | :white_check_mark: Microphone | |
 | 256GB Apacer AS350 PANTHER  SSD | :white_check_mark: iMessage/Facetime | |
 || :white_check_mark:Sleep/Wake functionality ||
@@ -32,8 +32,7 @@ For installation without any troubles you need to edit some setting in bios that
 
 | Settings |  |
 |--|--|
-| `CFG Lock` | Disable |
-| `CSM` | Disable |
+| CSM | Disable |
 | Fast Boot | Disable |
 | Secure Boot | Disable |
 | Enable Hiberation | Disable |
@@ -48,11 +47,11 @@ For installation without any troubles you need to edit some setting in bios that
 If you want to install it quick - you can download DEBUG or RELEASE version, create the boot flesh [(see more)](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) and copy DEBUG or RELEASE EFI folder into mounted EFI partition (on your flesh). In config.plist there are already generated serial numbers, but its better to change them using the [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). `Attenton!` The eGPU is disabled via [IORegistryExplorer](https://github.com/acidanthera/gfxutil/releases), [guide](https://dortania.github.io/OpenCore-Install-Guide/extras/spoof.html)
 
 ### USB Port Limit 
-I used USBMap to fix my USB ports, along with a few other issues. It generated a new USBPorts.kext for my system and installed it in kexts/other. If you want to generate it by yourself you can use this tool and guide - [USBMapping Guide By Dortania](https://dortania.github.io/OpenCore-Post-Install/usb/intel-mapping/intel.html)
+I used USBMap to fix my USB ports, along with a few other issues. It generated a new USBPorts.kext for my system and installed it in kexts/other. If you want to generate it by yourself you can use this tool and guide - [USBMapping Guide By Dortania](https://dortania.github.io/OpenCore-Post-Install/usb/intel-mapping/intel.html).
 
 
 ### Wifi using 
-If you want wifi to work you need to buy Broadcom DW1820A BCM94350ZAE module. If you have an Wi-Fi usb adapter here is a guide for you (Wireless USB Adapter)[https://github.com/chris1111/Wireless-USB-Adapter-Clover]. Be carefully with kext after installation, because in my case it did not worked untill i swapped RtWlanU.kext and RtWlanU1827.kext positions in the config.plist
+If you want wifi to work you need to buy Broadcom DW1820A BCM94350ZAE module. If you have an Wi-Fi usb adapter here is a guide for you (Wireless USB Adapter)[https://github.com/chris1111/Wireless-USB-Adapter-Clover]. Be carefully with kext after installation, because in my case it did not worked untill i swapped RtWlanU.kext and RtWlanU1827.kext loading priorities in the config.plist
 
 ### Getting the touchpad and buttons to function
 In the kext folder there are 2 kexts for I2C touchpad - VoodooI2C and VoodooI2CHID. Due to I have and ELAN1200 version of touchpad this protocol needs to use VoodooI2CHID. But I have only one problem - in some programs or workspaces (like Desktop) left button behaves like right button (cant drag and files)
