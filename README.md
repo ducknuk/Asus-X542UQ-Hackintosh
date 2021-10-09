@@ -1,7 +1,3 @@
-<a href = "https://github.com/ducknuk/Asus-X542UQ-Catalina/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = ducknuk/Asus-X542UQ-Catalina"/>
-</a>
-
 # Asus X542UQ Catalina Hackintosh
 This repository provides you the material of installation the Catalana Hackintosh with Opencore. Here you can find RELEASE and DEBUG versions. Feel free to ask questions and make contributions.
 
