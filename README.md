@@ -15,7 +15,7 @@ This repository provides you the material of installation the Catalana Hackintos
 | Qualcomm Atheros QCA9377 Wireless Network Adapter | :white_check_mark: HDMI | |
 | Core i3 7100U | :white_check_mark: Screen brightness adjustment | |
 | PS/2 Keyboard | :white_check_mark: Webcam | |
-| I2C touchpad | :white_check_mark: Sleep/Wake functionality | |
+| I2C ELAN1200 Trackpad | :white_check_mark: Sleep/Wake functionality | |
 | HDMI | | |
 |[Manufacturers Website](https://www.asus.com/ru/Laptops/For-Home/VivoBook/ASUS-VivoBook-15-X542UQ/) | | |
 
@@ -35,6 +35,7 @@ For installation without any troubles you need to edit some setting in bios that
 | CSM | Disable |
 | Fast Boot | Disable |
 | Secure Boot | Disable |
+| Intel Virtualization Technology | Disable |
 | Enable Hiberation | Disable |
 | VT-D | Disable |
 | Wake on Lan | Disable |
@@ -44,7 +45,7 @@ For installation without any troubles you need to edit some setting in bios that
 ## :notebook_with_decorative_cover: Installation Notes
 
 ### Installation of Catalina by using this repository
-If you want to install it quick - you can download DEBUG or RELEASE version, create the boot flesh [(see more)](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) and copy DEBUG or RELEASE EFI folder into mounted EFI partition (on your flesh). In config.plist there are already generated serial numbers, but its better to change them using the [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). `Attenton!` The eGPU is disabled via [IORegistryExplorer](https://github.com/acidanthera/gfxutil/releases), [guide](https://dortania.github.io/OpenCore-Install-Guide/extras/spoof.html)
+If you want to install it quick - you can download DEBUG or RELEASE version, create the boot flash [(see more)](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) and copy DEBUG or RELEASE EFI folder into mounted EFI partition (on your flash). In config.plist there are already generated serial numbers, but its better to change them using the [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). `Attenton!` The eGPU is disabled via [IORegistryExplorer](https://github.com/acidanthera/gfxutil/releases), [guide](https://dortania.github.io/OpenCore-Install-Guide/extras/spoof.html)
 
 ### USB Port Limit 
 I used USBMap to fix my USB ports, along with a few other issues. It generated a new USBPorts.kext for my system and installed it in kexts/other. If you want to generate it by yourself you can use this tool and guide - [USBMapping Guide By Dortania](https://dortania.github.io/OpenCore-Post-Install/usb/intel-mapping/intel.html).
@@ -57,7 +58,7 @@ If you want wifi to work you need to buy Broadcom DW1820A BCM94350ZAE module. If
 In the kext folder there are 2 kexts for I2C touchpad - VoodooI2C and VoodooI2CHID. Due to I have and ELAN1200 version of touchpad this protocol needs to use VoodooI2CHID. But I have only one problem - in some programs or workspaces (like Desktop) left button behaves like right button (cant drag and files)
 
 ### Sleep/Wake functionality problems
-This laptop can be taken to sleep correctly without a charger connected to it. If we plug in the AC the laptop will awake in a few seconds after hibernation. This happens due to asus laptops peculiarities. But if you find the solution, feel free to contribute c:
+This laptop can be taken to sleep correctly without a charger connected to it. If we plug in the AC the laptop will awake in a few seconds after hibernation. This happens due to asus laptops peculiarities. But if you find the solution, feel free to contribute 
 
 ## Useful Info
 - [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide/)
