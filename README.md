@@ -1,5 +1,5 @@
-# Asus X542UQ Catalina Hackintosh
-This repository provides you the material of installation the Catalana Hackintosh with Opencore. Here you can find RELEASE and DEBUG versions. Feel free to ask questions and make contributions.
+# VivoBook Asus X542UQ laptop Catalina 10.15.7 Hackintosh
+This repository provides you the material of installation the Catalana Hackintosh with Opencore (0.7.2). Here you can find RELEASE and DEBUG versions. Feel free to ask questions and make contributions.
 
 <br>
 
