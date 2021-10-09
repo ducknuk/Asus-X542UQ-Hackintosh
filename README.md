@@ -67,3 +67,5 @@ This laptop can be taken to sleep correctly without a charger connected to it. I
 - [Wireless USB Adapter](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
 - [USBMapping](https://dortania.github.io/OpenCore-Post-Install/usb/intel-mapping/intel.html)
 - [Hackintools](https://github.com/headkaze/Hackintool)
+
+## This template was inspired by template of [jbwharris](https://github.com/jbwharris)
