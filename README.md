@@ -1,5 +1,5 @@
 # Asus X542UQ Catalina Hackintosh
-This repository provides you the material of installation the Catalana Hackintosh opencore. Here you can find RELEASE and DEBUG versions. Feel free to ask questions and make contributions
+This repository provides you the material of installation the Catalana Hackintosh with Opencore. Here you can find RELEASE and DEBUG versions. Feel free to ask questions and make contributions
 
 <br>
 
