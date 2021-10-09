@@ -51,7 +51,7 @@ I used USBMap to fix my USB ports, along with a few other issues. It generated a
 
 
 ### Wifi using 
-If you want wifi to work you need to buy Broadcom DW1820A BCM94350ZAE module. If you have an Wi-Fi usb adapter here is a guide for you (Wireless USB Adapter)[https://github.com/chris1111/Wireless-USB-Adapter-Clover]. Be carefully with kext after installation, because in my case it did not worked untill i swapped RtWlanU.kext and RtWlanU1827.kext loading priorities in the config.plist
+If you want wifi to work you need to buy Broadcom DW1820A BCM94350ZAE module. If you have an Wi-Fi usb adapter here is a guide for you [Wireless USB Adapter](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter). Be carefully with kext after installation, because in my case it did not worked untill i swapped RtWlanU.kext and RtWlanU1827.kext loading priorities in the config.plist
 
 ### Getting the touchpad and buttons to function
 In the kext folder there are 2 kexts for I2C touchpad - VoodooI2C and VoodooI2CHID. Due to I have and ELAN1200 version of touchpad this protocol needs to use VoodooI2CHID. But I have only one problem - in some programs or workspaces (like Desktop) left button behaves like right button (cant drag and files)
