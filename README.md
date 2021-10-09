@@ -10,13 +10,12 @@ This repository provides you the material of installation the Catalana Hackintos
 | GeForce® GT 940mx with 2GB GDDR5 | :white_check_mark: USB C/3.0 | :x: SD card reader (not tested yet) |
 | Realtek ALC294 | :white_check_mark: Ethernet port |  :x: Wifi |
 | 15.6" 16:9, 1920 x 1080 pixel 141 PPI, glossy: no | :white_check_mark: Audio | :x: VGA port |  
-| 12gb 2133mhz DDR4 (extanded) | :white_check_mark: Microphone | |
+| 12gb 2133mhz DDR4 (extended) | :white_check_mark: Microphone | |
 | 256GB Apacer AS350 PANTHER  SSD | :white_check_mark: iMessage/Facetime | |
-|| :white_check_mark:Sleep/Wake functionality ||
 | Qualcomm Atheros QCA9377 Wireless Network Adapter | :white_check_mark: HDMI | |
 | Core i3 7100U | :white_check_mark: Screen brightness adjustment | |
 | PC/2 Keyboard | :white_check_mark: Webcam | |
-| HDMI | | |
+| HDMI | :white_check_mark: Sleep/Wake functionality | |
 |[Manufacturers Website](https://www.asus.com/ru/Laptops/For-Home/VivoBook/ASUS-VivoBook-15-X542UQ/) | | |
 
 ## :muscle: Upgrades
